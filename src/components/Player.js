@@ -4,12 +4,12 @@ import Counter from './Counter';
 
 class Player extends PureComponent {
   static propTypes = {
-    changeScore: PropTypes.func,
-    removePlayer: PropTypes.func,
+    changeScore: PropTypes.func.isRequired,
+    removePlayer: PropTypes.func.isRequired,
     name: PropTypes.string.isRequired,
     score: PropTypes.number.isRequired,
-    id: PropTypes.number,
-    index: PropTypes.number
+    id: PropTypes.number.isRequired,
+    index: PropTypes.number.isRequired
   };
 
     render(){
